@@ -1,0 +1,33 @@
+---
+title: "Statistical Inference"
+date: "`r Sys.Date()`"
+output:
+  rmdformats::downcute: 
+    toc_depth: 6
+    fig_caption: TRUE
+    gallery: TRUE
+    highlight: tango
+    use_bookdown: TRUE
+    self_contained: true
+    default_style: "dark"
+    downcute_theme: "chaos"
+    
+---
+
+
+```{r setup, include=FALSE}
+## Global options
+knitr::opts_chunk$set(cache = TRUE)
+```
+# Introduction
+This project is part of Coursera John Hopkins Data Science Course: Statistical Inference. This project consists of two parts:
+1. A simulation exercise.
+2. Basic inferential data analysis
+
+## Project 1 : A simulation exercise
+
+In this project we will investigate the exponential distribution in R and compare it with the Central Limit Theorem. The exponential distribution can be simulated in R with rexp(n, lambda) where lambda is the rate parameter. The mean of exponential distribution is 1/lambda and the standard deviation is also 1/lambda. Set lambda = 0.2 for all of the simulations. We will investigate the distribution of averages of 40 exponentials. Note that we will need to do a thousand simulations.
+
+## Project 2 : Basic inferential data analysis
+
+Now in the second project, we're going to analyze the ToothGrowth data in the R datasets package.
